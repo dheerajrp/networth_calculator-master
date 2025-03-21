@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Net Worth Calculator</title></head>
+<body>
+    <h2>Enter Your Financial Details</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Calculate Net Worth</button>
+    </form>
+</body>
+</html>
+
